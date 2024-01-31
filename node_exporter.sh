@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Скачиваем node_exporter для мониторнинга, можно через wget
-curl -LO https://github.com/prometheus/node_exporter/releases/download/v1.6.1/node_exporter-1.6.1.linux-amd64.tar.gz
-
-# Распаковка архивов 
-tar xzvf node_exporter-*.t*gz
-
 # Добавляем пользователей
 useradd --no-create-home --shell /bin/false node_exporter
 
@@ -14,7 +8,7 @@ cp node_exporter-*.linux-amd64/node_exporter /usr/local/bin
 chown node_exporter: /usr/local/bin/node_exporter
 
 # Копируем конфиг службы node exporter
-cp /home/qqee/nginx-git/node_exporter.service /etc/systemd/system/node_exporter.service
+cp /home/qqee/backend2-git/node_exporter.service /etc/systemd/system/node_exporter.service
 
 # Перезапуск
 systemctl daemon-reload
