@@ -23,11 +23,15 @@
 
    > #Устанавливаем MySQL
 
-    apt install mysql-server-8.0
+    sudo apt install mysql-server-8.0
 #
    > #Запускаем
     
-    systemctl start mysql
+    sudo systemctl start mysql
+#
+   > #Проверка статуса
+
+    sudo systemctl status mysql
 #
 
  ### Установка Node Exporter
