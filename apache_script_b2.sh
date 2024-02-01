@@ -3,7 +3,7 @@
 DIR='/etc/apache2/sites-available/'
 DIR1='/home/qqee/backend2-git/000-backend2.conf'
 DIR2='/etc/apache2/sites-available/000-backend2.conf'
-DIR4='/var/www/html/index.html'
+DIR4='/home/qqee/backend2-git/index.html'
 DIR5='/var/www/backend2/'
 DIR6='/var/www/backend2/index.html'
 cp $DIR1 $DIR2
